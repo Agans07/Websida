@@ -1,7 +1,7 @@
 let alleOrd = []
 let filtreradeOrd = []
 let nuvarandeSida = 0
-const ORDPERSIDA = 3
+const ORDPERSIDA = 2
 
 async function hämtaOrd() {
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${CONFIG.SHEET_ID}/values/${CONFIG.SHEET_NAME}!A2:C1000?key=${CONFIG.API_KEY}`
