@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz – Min App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+
+  <div class="container wide">
+
+    <div class="header">
+      <a href="index.html" class="back-btn">← Tillbaka</a>
+      <h1>Quiz</h1>
+      <p>Testa dina kunskaper</p>
+    </div>
+
+    <!-- Laddning -->
+    <div id="loading" class="status">Hämtar ord...</div>
+
+    <!-- Quizkortet -->
+    <div id="quiz-card" class="quiz-card hidden">
+
+      <div class="progress">
+        <span id="progress-text">Fråga 1 av 10</span>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="question-type" id="question-type">Min förklaring</div>
+      <h2 class="question" id="question">Vad betyder detta ord?</h2>
+
+      <div id="alternatives" class="alternatives"></div>
+
+      <div id="feedback" class="feedback hidden"></div>
+
+      <button id="next-btn" class="next-btn hidden" onclick="nästaFråga()">
+        Nästa fråga →
+      </button>
+
+    </div>
+
+    <!-- Resultat -->
+    <div id="result-card" class="result-card hidden">
+      <div class="result-emoji">🎉</div>
+      <h2>Quiz klart!</h2>
+      <p id="result-text">Du fick 8 av 10 rätt</p>
+      <button class="next-btn" onclick="startaQuiz()">Spela igen</button>
+    </div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="quiz.js"></script>
+
+</body>
+</html>

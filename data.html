@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data – Min App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="data.css" />
+</head>
+<body>
+
+  <div class="container wide">
+
+    <div class="header">
+      <a href="index.html" class="back-btn">← Tillbaka</a>
+      <h1>Data</h1>
+      <p>Alla ord i din ordbok</p>
+    </div>
+
+    <input
+      type="text"
+      id="sök-input"
+      class="sök-input"
+      placeholder="Sök efter ett ord..."
+      oninput="sök(this.value)"
+    />
+
+    <div id="status" class="status">Hämtar ord...</div>
+
+    <div id="word-list" class="word-list"></div>
+
+    <div id="paginering" class="paginering"></div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+
+</body>
+</html>

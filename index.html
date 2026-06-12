@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Min <span>App</span></h1>
+      <p>Välj vad du vill göra</p>
+    </div>
+
+    <nav class="nav">
+
+      <button class="btn" onclick="handleNav('lagg-till')">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <div class="btn-label">
+          Lägg till
+          <span>Skapa ny post</span>
+        </div>
+      </button>
+
+      <button class="btn" onclick="handleNav('data')">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div class="btn-label">
+          Data
+          <span>Visa all information</span>
+        </div>
+      </button>
+
+      <button class="btn" onclick="handleNav('quiz')">
+        <div class="btn-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div class="btn-label">
+          Quiz
+          <span>Testa dina kunskaper</span>
+        </div>
+      </button>
+
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
